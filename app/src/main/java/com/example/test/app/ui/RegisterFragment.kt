@@ -1,16 +1,16 @@
-package com.example.test.ui
+package com.example.test.app.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.test.databinding.FragmentLoginBinding
+import com.example.test.databinding.FragmentRegisterBinding
 import com.example.test.utils.BaseFragment
 
-class LoginFragment : BaseFragment() {
+class RegisterFragment : BaseFragment() {
 
-    private var _binding : FragmentLoginBinding? = null
+    private var _binding : FragmentRegisterBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -18,7 +18,7 @@ class LoginFragment : BaseFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentLoginBinding.inflate(inflater, container, false)
+        _binding = FragmentRegisterBinding.inflate(inflater, container, false)
         val view = binding.root
         return view
     }
@@ -31,12 +31,12 @@ class LoginFragment : BaseFragment() {
     }
 
     fun initAction() {
-        binding.btnLoginToRegister.setOnClickListener {
-            moveLoginToRegister()
+        binding.btnRegisterToLogin.setOnClickListener {
+            moveRegisterToLogin()
         }
     }
 
-    fun moveLoginToRegister() {
-        findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToRegisterFragment())
+    fun moveRegisterToLogin() {
+        findNavController().navigate(RegisterFragmentDirections.actionRegisterFragmentToLoginFragment())
     }
 }
