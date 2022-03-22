@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="tnc">By signing in you are agreeing our Term and privacy policy</string>
+    <string name="name">Name</string>
+    <string name="mail">Email Address</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="remember_password">Remember password</string>
+    <string name="forget_password">Forget password</string>
+    <string name="or_connect_With">or connect with</string>
+    <string name="dont_have_account">Don\'t have and account ? </string>
+    <string name="already_have_account">Already have an account ? </string>
+</resources>
