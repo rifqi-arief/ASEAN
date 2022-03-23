@@ -73,6 +73,9 @@ class LoginFragment : BaseFragment() {
         binding.btnLogin.setOnClickListener {
             doLogin()
         }
+        binding.btnLoginToRegister.setOnClickListener {
+            moveLoginToRegister()
+        }
     }
 
     fun moveLoginToRegister() {

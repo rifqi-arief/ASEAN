@@ -111,7 +111,8 @@
         app:boxBackgroundColor="@color/white"
         app:layout_constraintTop_toBottomOf="@id/layout_password"
         android:layout_marginHorizontal="@dimen/component_huge"
-        android:layout_marginTop="@dimen/component_normal">
+        android:layout_marginTop="@dimen/component_normal"
+        app:errorEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_confirm_password"

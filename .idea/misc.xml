@@ -7,7 +7,10 @@
         <entry key="..\:/Test2/app/src/main/res/drawable/ic_error.xml" value="0.25833333333333336" />
         <entry key="..\:/Test2/app/src/main/res/drawable/ic_loading.xml" value="0.25833333333333336" />
         <entry key="..\:/Test2/app/src/main/res/drawable/ic_refresh.xml" value="0.25833333333333336" />
+        <entry key="..\:/Test2/app/src/main/res/drawable/ic_thumbs_up.xml" value="0.20885416666666667" />
+        <entry key="..\:/Test2/app/src/main/res/drawable/round_button.xml" value="0.20885416666666667" />
         <entry key="..\:/Test2/app/src/main/res/layout/activity_main.xml" value="0.2421875" />
+        <entry key="..\:/Test2/app/src/main/res/layout/dialog_info.xml" value="0.19270833333333334" />
         <entry key="..\:/Test2/app/src/main/res/layout/fragment_home.xml" value="0.2421875" />
         <entry key="..\:/Test2/app/src/main/res/layout/fragment_login.xml" value="0.2421875" />
         <entry key="..\:/Test2/app/src/main/res/layout/fragment_register.xml" value="0.2421875" />

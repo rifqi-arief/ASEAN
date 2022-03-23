@@ -5,11 +5,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.example.test.R
+import com.example.test.app.listener.DialogInfoListener
 import com.example.test.app.viewmodel.AppViewModel
 import com.example.test.databinding.FragmentRegisterBinding
 import com.example.test.domain.entity.response.RegisterRequest
 import com.example.test.utils.BaseFragment
 import com.example.test.utils.Dialog
+import com.example.test.utils.Validator.isEmail
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class RegisterFragment : BaseFragment() {
@@ -47,7 +50,20 @@ class RegisterFragment : BaseFragment() {
             dismissLoading()
         })
         appViewModel.register.observe(viewLifecycleOwner, {
-
+            dismissLoading()
+            if (it.message == "success") {
+                Dialog.information(
+                    requireContext(),
+                    requireContext().resources.getString(R.string.information),
+                    it.message,
+                    R.drawable.ic_thumbs_up,
+                    requireContext().resources.getString(R.string.ok),
+                    object : DialogInfoListener{
+                        override fun onButtonClickListener() {
+                        }
+                    }
+                )
+            }
         })
     }
 
@@ -64,6 +80,17 @@ class RegisterFragment : BaseFragment() {
     }
 
     fun showError(message : String) {
+        Dialog.information(
+            requireContext(),
+            requireContext().resources.getString(R.string.warning),
+            message,
+            R.drawable.cancel,
+            requireContext().resources.getString(R.string.ok),
+            object : DialogInfoListener{
+                override fun onButtonClickListener() {
+                }
+            }
+        )
         toast(message)
     }
 
@@ -72,7 +99,18 @@ class RegisterFragment : BaseFragment() {
             moveRegisterToLogin()
         }
         binding.btnRegister.setOnClickListener {
-            doRegister()
+            if (!binding.etMail.text.toString().isEmail()){
+                binding.layoutEmail.isErrorEnabled = true
+                binding.layoutEmail.error = "wrong format"
+                return@setOnClickListener
+            }
+
+            if (binding.etPassword.text.toString().uppercase()!!.equals(binding.etConfirmPassword.text.toString().uppercase())){
+                doRegister()
+            } else {
+                binding.layoutConfirmPassword.isErrorEnabled = true
+                binding.etConfirmPassword.error = "wrong confirm password"
+            }
         }
     }
 

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        app:cardCornerRadius="@dimen/component_tiny"
+        android:layout_margin="@dimen/component_sizeable">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/component_sizeable"
+            android:paddingVertical="@dimen/component_sizeable">
+
+            <ImageView
+                android:id="@+id/iv_dialog_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/component_sizeable"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_dialog_info_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/component_tiny"
+                android:textStyle="bold"
+                tools:text="Title"
+                android:textSize="@dimen/component_extra_big"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_dialog_info_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/component_tiny"
+                tools:text="content"
+                android:textSize="@dimen/component_sizeable"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/component_sizeable"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_dialog_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/component_medium"
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/component_sizeable"
+                tools:text="Button"
+                android:textColor="@color/white"
+                android:background="@drawable/round_button"
+                app:backgroundTint="@color/blue_300"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
