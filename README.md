@@ -1,11 +1,10 @@
 # ASEAN
 
-Programming Practices Followed
-
-a) Android Clean Architecture
-b) Koin for Dependency Injection
-c) MVVM
-d) Retrofit with Okhttp
-e) Room for data caching
-f) Repository pattern 
-d) Unit testing
+# Programming Practices Followed
+- Android Clean Architecture
+- Koin for Dependency Injection
+- MVVM
+- Retrofit with Okhttp
+- Room for data caching
+- Repository pattern 
+- Unit testing
