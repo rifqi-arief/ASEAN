@@ -3,10 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Test2/app/src/main/res/drawable/ic_broken_image.xml" value="0.25833333333333336" />
+        <entry key="..\:/Test2/app/src/main/res/drawable/ic_error.xml" value="0.25833333333333336" />
+        <entry key="..\:/Test2/app/src/main/res/drawable/ic_loading.xml" value="0.25833333333333336" />
+        <entry key="..\:/Test2/app/src/main/res/drawable/ic_refresh.xml" value="0.25833333333333336" />
         <entry key="..\:/Test2/app/src/main/res/layout/activity_main.xml" value="0.2421875" />
         <entry key="..\:/Test2/app/src/main/res/layout/fragment_home.xml" value="0.2421875" />
         <entry key="..\:/Test2/app/src/main/res/layout/fragment_login.xml" value="0.2421875" />
         <entry key="..\:/Test2/app/src/main/res/layout/fragment_register.xml" value="0.2421875" />
+        <entry key="..\:/Test2/app/src/main/res/layout/item_product.xml" value="0.4" />
         <entry key="..\:/Test2/app/src/main/res/layout/loading.xml" value="0.121875" />
       </map>
     </option>

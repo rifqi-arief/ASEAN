@@ -10,4 +10,5 @@
     <color name="text">#6B5E5E</color>
     <color name="grey_300">#A6A6A6</color>
     <color name="blue_300">#0386D0</color>
+    <color name="placeholder">#6FB6B6B6</color>
 </resources>
