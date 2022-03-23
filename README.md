@@ -1,4 +1,3 @@
-# ASEAN
 
 # Programming Practices Followed
 - Android Clean Architecture
